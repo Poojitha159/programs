@@ -1,0 +1,16 @@
+class Octal{
+ public static void main(String[] a){
+   Scanner sc=new Scanner(System.n);
+   int bin=sc.nextInt();
+   int dec=0,i=0;
+   while(bin>0){
+      dec+=Math.pow(2,i++)*(bin%10);
+      bin/=10;
+   }
+   while(dec!=0){
+      oct+=(dec % 8)*((int)Math.pow(10,i++));
+      dec /=8;
+    }
+System.out.println(oct);
+}
+}
