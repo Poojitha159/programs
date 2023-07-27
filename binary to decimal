@@ -1,0 +1,20 @@
+import java.util.*;
+class Bin{
+  public static vid main(String[] a){
+     Scaner sc=new Scanner(System.in);
+     int bin=sc.nextInt();
+     int dec=0;
+     int n=0;
+     while(true){
+          if(bin==0)
+            break;
+          else{
+             int temp=bin%10;
+             dec+=temp*Math.pow(2,n);
+             n++;
+            }
+}
+System.out.println(dec);
+}
+}
+
